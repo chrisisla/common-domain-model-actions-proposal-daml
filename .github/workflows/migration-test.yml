@@ -81,7 +81,7 @@ jobs:
           CI_DEPLOY_PASSWORD: ${{secrets.CI_DEPLOY_PASSWORD}}
 
       - name: Build Snapshot CI
-        if: github.ref == 'refs/heads/develop'
+        #if: github.ref == 'refs/heads/develop'
         uses: ./.github/actions/build-migration
         with:
           build-command: verify
