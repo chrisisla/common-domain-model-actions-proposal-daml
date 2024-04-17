@@ -2,8 +2,10 @@ name: Java CI with Maven
 
 on:
   push: #triggers on tag push event
-    tags:
-      - '*'
+  #  tags:
+  #    - '*'
+    branches:
+      - master
   pull_request: #triggers on PR merge event into develop branch
     types:
       - closed
