@@ -47,7 +47,7 @@ jobs:
           
       - name: SnapshotProperties
         id: snapshot_props
-        if: github.ref == 'refs/heads/develop'
+        #if: github.ref == 'refs/heads/develop'
         shell: bash
         run: |
           echo "SNAPSHOT_NAME=${{env.RELEASE_NAME}}" >> "$GITHUB_OUTPUT"
